@@ -43,7 +43,7 @@ def send_magic_packet(sock):
         pass
 
 def main():
-    print("=== DRIVER PS3 CLON: CORRECCIÓN CRUCETA ===")
+    print("=== DRIVER PS3 CLON:===")
     
     # Limpieza de entorno
     os.system("sudo killall -9 bluetoothd 2>/dev/null")
@@ -64,7 +64,7 @@ def main():
     send_magic_packet(c_ctrl)
     
     ui = UInput(cap, name="Sony PS3 Clon (Fixed Hat)", version=0x1)
-    print("\n[!!!] CRUCETA ARREGLADA. MINIMIZA Y A JUGAR [!!!]")
+    print("\n[!!!]MINIMIZA Y A JUGAR [!!!]")
 
     try:
         while True:
